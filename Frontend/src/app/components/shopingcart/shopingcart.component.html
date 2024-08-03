@@ -1,0 +1,40 @@
+<div class="shopping-cart" *ngIf="isOpen()">
+  <div class="cart-header">
+    <span>Shopping Cart</span>
+    <button class="close-btn" (click)="closeCart()">&times;</button>
+  </div>
+  <div class="cart-items">
+    <ul>
+      <li *ngFor="let item of cartItems">
+        <div class="cart-item">
+          <img
+            [src]="'assets/img/' + item.image"
+            alt="{{ item.name }}"
+            class="cart-item-image"
+          />
+          <div class="cart-item-details">
+            <span>{{ item.name }}</span>
+            {{ "   " }}
+            <span>{{ item.price }}</span>
+            {{ "   " }}
+            <span>{{ " EGP " }}</span>
+          </div>
+          <button class="remove-btn" (click)="removeItem(item)">Remove</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart-header"></div>
+
+  <div class="cart-item-details">
+    <span>{{ "Total Price : " }}</span>
+    {{ "   " }}
+    <span>{{ getTotalPrice() }}</span>
+    {{ "   " }}
+    <span>{{ " EGP " }}</span>
+    <button class="btn btn-success">CheckOut</button>
+  </div>
+
+  
+</div>

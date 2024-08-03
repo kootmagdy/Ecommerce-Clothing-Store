@@ -1,0 +1,7 @@
+<!-- <div *ngFor = "let labtop of labtops">
+    <app-card-item [image] = 'labtop.image'  [productName] = 'labtop.name' [price] = 'labtop.price' [description] = 'labtop.description' [quantity] = 'labtop.quantity' ></app-card-item>
+</div> -->
+
+<div *ngFor="let prod of products">
+  <app-card-item [product]="prod"></app-card-item>
+</div>

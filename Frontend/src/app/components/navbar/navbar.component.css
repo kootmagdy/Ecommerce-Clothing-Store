@@ -1,0 +1,45 @@
+/* Navigation styles */
+nav {
+  background-color: #343a40; /* Dark background color */
+  padding: 15px 30px; /* Padding around the navigation links */
+  display: flex;
+  justify-content: space-between; /* Distribute items along the main axis */
+  align-items: center; /* Center items vertically */
+ 
+}
+
+nav .navbar-brand {
+  color: #fa82be; /* White text color for the logo */
+  font-size: 24px; /* Font size for the logo */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold font weight */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex;
+  gap: 20px; /* Gap between navigation items */
+}
+
+nav ul li {
+  display: inline; /* Display navigation items inline */
+}
+
+nav ul li a {
+  color: #fa82be; /* White text color for navigation links */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding around navigation links */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Darker background color on hover */
+}
+
+
+.fn18{
+  font-size: 18px
+}

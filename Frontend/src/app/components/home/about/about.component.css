@@ -1,0 +1,40 @@
+/* About section styles */
+#about {
+  background-color: #23282c; /* Darker blue background color */
+  color: #fff; /* White text color */
+  padding: 100px 0; /* Padding around the content */
+}
+
+#about h2 {
+  font-size: 3rem; /* Font size for the heading */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold font weight */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+#about hr.divider {
+  width: 3rem; /* Divider width */
+  height: 2px; /* Divider height */
+  background-color: #fff; /* White color for the divider */
+  margin: 1rem auto; /* Center and space the divider */
+}
+
+#about p {
+  font-size: 1.5rem; /* Font size for the paragraph */
+  color: rgba(255, 255, 255, 0.75); /* Semi-transparent white text color */
+  margin-bottom: 30px; /* Bottom margin */
+}
+
+#about .btn {
+  font-size: 1.25rem; /* Font size for the button */
+  padding: 15px 30px; /* Padding around the button */
+  border-radius: 30px; /* Rounded corners */
+  background-color: #007bff; /* Lighter blue background color */
+  color: #fff; /* White text color */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#about .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: #fff; /* White text color */
+}

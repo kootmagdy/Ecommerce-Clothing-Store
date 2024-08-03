@@ -1,0 +1,29 @@
+.masthead {
+    background-image: url('/assets/img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .masthead h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .masthead p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .masthead .btn {
+    font-size: 1.25rem;
+  }
+  
+  .masthead .divider {
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    margin: 1rem auto;
+  }
+  

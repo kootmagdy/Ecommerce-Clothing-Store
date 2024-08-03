@@ -1,0 +1,62 @@
+<!-- <div class="col">
+    <div class="card h-100 shadow-sm  mb-3 mt-3">
+        <img [src]="image" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="clearfix mb-3">
+                <span class="float-start badge rounded-pill bg-primary">{{ productName }}</span>
+                <span class="float-end price-hp">{{ price }}&euro;</span>
+            </div>
+            <h5 class="card-title">Quantity : 
+                <span class="float-end">
+                    <ng-container *ngIf="quantity === 0; else oneLeft">
+                        Sold Out
+                    </ng-container>
+                    <ng-template #oneLeft>
+                        <span *ngIf="quantity === 1">
+                            One product left
+                        </span>
+                        <span *ngIf="quantity > 1">
+                            {{ quantity }} products left
+                        </span>
+                    </ng-template>
+                </span>
+            </h5>
+            <h6 class="card-title">{{ description }}</h6>
+            <div class="text-center my-4">
+                <button class="btn btn-primary" [disabled]="quantity === 0" (click)="addToCart(product)">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="col">
+    <div class="card h-100 shadow-sm mb-3 mt-3">
+      <img [src]="'assets/img/' + product.image" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="clearfix mb-3">
+          <span class="float-start badge rounded-pill bg-primary">{{ product.name }}</span>
+          <span class="float-end price-hp">{{ product.price }}&euro;</span>
+        </div>
+        <h5 class="card-title">Quantity : 
+          <span class="float-end">
+            <ng-container *ngIf="product.quantity === 0; else oneLeft">
+              Sold Out
+            </ng-container>
+            <ng-template #oneLeft>
+              <span *ngIf="product.quantity === 1">
+                One product left
+              </span>
+              <span *ngIf="product.quantity > 1">
+                {{ product.quantity }} products left
+              </span>
+            </ng-template>
+          </span>
+        </h5>
+        <h6 class="card-title">{{ product.description }}</h6>
+        <div class="text-center my-4">
+          <button class="btn btn-primary" [innerHTML]="buttonText" [disabled]="product.quantity === 0" (click)="addToCart(product)"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,113 @@
+ <div class="container mt-5">
+    <h1 class="my-2 text-muted text-center">
+      Sign Up
+    </h1>
+    <form [formGroup]="userForm" (submit)="userHandler()">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input
+          type="text"
+          name="userName"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Enter your full Name"
+          formControlName="userName"
+        />
+        <ng-container *ngIf="getname?.touched">
+          <div
+            *ngIf="getname?.hasError('required')"
+            id="emailHelp"
+            class="form-text text-danger"
+          >
+            Name is Required
+          </div>
+          <div
+            *ngIf="getname?.hasError('minlength')"
+            id="emailHelp"
+            class="form-text text-danger"
+          >
+            Name Length must be > 3
+          </div>
+        </ng-container>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          name="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Enter Your Password"
+          formControlName="password"
+        />
+        <ng-container *ngIf="getpassword?.touched">
+          <div
+            *ngIf="getpassword?.hasError('required')"
+            id="emailHelp"
+            class="form-text text-danger"
+          >
+            Password is Required
+          </div>
+          <div
+            *ngIf="getpassword?.hasError('minlength')"
+            id="emailHelp"
+            class="form-text text-danger"
+          >
+            Password must be > 5
+          </div>
+        </ng-container>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword6" class="form-label">Confirm Password</label>
+        <input
+          name="confirmPassword"
+          type="password"
+          class="form-control"
+          id="exampleInputPassword6"
+          formControlName="confirmPassword"
+          placeholder="Re-enter your password"
+        />
+        <ng-container *ngIf="getconfirmpassword?.touched">
+          <div
+            *ngIf="getconfirmpassword?.hasError('required')"
+            id="emailHelp"
+            class="form-text text-danger"
+          >
+            Confirm Password is required
+          </div>
+          <div *ngIf="getconfirmpassword?.value !== getpassword?.value">
+            <div id="emailHelp" class="form-text text-danger">
+              Passwords do not match
+            </div>
+          </div>
+        </ng-container>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword6" class="form-label">Address</label>
+        <input
+          name="address"
+          type="text"
+          class="form-control"
+          id="exampleInputPassword6"
+          formControlName="address"
+          placeholder="Enter Your Address"
+        />
+        <ng-container *ngIf="getaddress?.touched">
+          <div
+            *ngIf="getaddress?.hasError('required')"
+            id="emailHelp"
+            class="form-text text-danger"
+          >
+            Address is required
+          </div>
+        </ng-container>
+      </div>
+      <!-- <p class="text-primary">{{ userForm.value | json }}</p> -->
+      <button type="submit" class="btn btn-success">
+        Sign Up
+      </button>
+    </form>
+  </div>
+ 
+ 

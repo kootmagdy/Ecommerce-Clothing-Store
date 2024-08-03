@@ -1,0 +1,8 @@
+.container {
+    max-width: 500px; /* Adjust the width as per your design */
+    margin: auto; /* Center align the container */
+    padding: 20px; /* Add some padding inside the container */
+    border: 1px solid #ccc; /* Optional: Add a border around the container */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }

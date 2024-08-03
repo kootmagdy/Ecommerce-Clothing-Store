@@ -1,0 +1,52 @@
+/* Footer styles */
+.main-footer {
+    background-color: #343a40; /* Dark background color */
+    color: #fa82be; /* White text color */
+    padding: 40px 0; /* Padding top and bottom */
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+}
+
+.main-footer h3 {
+    font-size: 24px; /* Large font size for heading */
+    margin-bottom: 20px; /* Margin bottom for spacing */
+}
+
+.main-footer p {
+    font-size: 14px; /* Font size for paragraph */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+.footer-widget .footer-title {
+    font-size: 18px; /* Font size for title */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 15px; /* Margin bottom for spacing */
+}
+
+.footer-widget ul.list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-widget ul.list li {
+    margin-bottom: 10px; /* Margin bottom for spacing between items */
+}
+
+.footer-bottom {
+    background-color: #343a40; /* Darker background color */
+    padding: 20px 0; /* Padding top and bottom */
+    color: #fa82be; /* White text color */
+}
+
+.footer-bottom a {
+    color:#fa82be; /* White link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.footer-bottom a:hover {
+    color: #007bff; /* Blue color on hover */
+}
